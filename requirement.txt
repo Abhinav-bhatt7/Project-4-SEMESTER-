@@ -1,0 +1,6 @@
+backtesting
+sqlalchemy
+fastapi
+numpy
+pandas
+psycopg2

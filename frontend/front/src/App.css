@@ -1,0 +1,5 @@
+/* Force the container to ignore external navbar height if necessary */
+#root {
+  height: 100vh;
+  overflow: hidden;
+}

@@ -3,6 +3,10 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import Navbar from './Navbar'
+import {BrowserRouter,Routes,Route} from 'react-router-dom'
+import Ai from "./Ai"
+import Home from './Home'
+import Backtest from './Backtest'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -11,6 +15,13 @@ function App() {
     
     <>
     <Navbar/>
+  
+    <Routes>
+      <Route path='/' element={<Home/>}/>
+      <Route path="/Ai" element={<Ai/>}/>
+      <Route path="/Backtest" element={<Backtest/>}/>
+    </Routes>
+
     
   
       
